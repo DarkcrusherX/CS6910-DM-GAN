@@ -1,0 +1,33 @@
+Training a DM-GAN 
+
+Based on https://arxiv.org/pdf/1904.01310.pdf  .
+
+Datset can be downloaded from here . https://drive.google.com/drive/folders/1vsj1Fotzq8bO-Dmj-DztCxnkV4n-jiUQ?usp=sharing
+
+Encoders : https://drive.google.com/drive/folders/1ZOaNQIPbUTENsMEul8JXEbfueCIkhSh_?usp=sharing
+
+
+To start training ,  run main.py.             python3 main.py
+
+Folders
+    code 
+        main.py     :    The starting code. This code initiates GAN training. 
+
+        datasets.py :    For preprocessing datset for model.
+
+        model.py    :    Defined Generator and discrimator models.
+
+        trainer.py  :    To preset all parameters and functions for training and train for a given epoch.
+
+        GlobalAttention.py  :  Some conversion functions necessary to deal with datatype for GAN.
+        spectral.py     
+
+        miscc 
+            losses.py     :        Defining loss function.
+            utils.py      :        For processing operations.
+
+    DAMSMencoders  
+        bird           Image and text encoders we using.
+    
+    Data 
+        birds   :     Dataset for training.
